@@ -1,19 +1,5 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-input {
-  padding: 0.5em;
-  border: 1px solid;
-  font-size: 1em;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .App-logo {
