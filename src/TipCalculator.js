@@ -22,11 +22,11 @@ class TipCalculator extends Component {
       const amountPerPerson = totalBill / this.state.split;
 
       return (
-        <div>
+        <div className="row">
       
-          <form>
+          <div className="column">
             <label>
-              Bill
+              Bill ($)
               <input 
                 type="number"
                 value={this.state.bill}
@@ -51,16 +51,18 @@ class TipCalculator extends Component {
                 onChange={(e) => this.setState({ split: e.target.value })}
               />
             </label>
-          </form>
+          </div>
 
-          <p>Tip Amount</p>
-          <h1>${tipAmount.toFixed(2)}</h1>
+          <div className="column">
+            <p>Tip Amount</p>
+            <h2>${tipAmount.toFixed(2)}</h2>
 
-          <p>Total Bill (including tip)</p>
-          <h1>${totalBill.toFixed(2)}</h1> 
+            <p>Total Bill (including tip)</p>
+            <h2>${totalBill.toFixed(2)}</h2> 
 
-          <p>Amount Per Person</p>
-          <h1>${amountPerPerson.toFixed(2)}</h1> 
+            <p>Amount Per Person</p>
+            <h2>${amountPerPerson.toFixed(2)}</h2> 
+          </div>
           
         </div>
       )

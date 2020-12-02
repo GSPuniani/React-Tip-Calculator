@@ -9,11 +9,28 @@ input {
   padding: 0.5em;
   border: 1px solid;
   font-size: 1em;
+  margin: 0.7em 0 1em 0.2em;
 }
 
 label {
   display: flex;
   flex-direction: column;
+  padding-top: 1em;
+}
+
+h2 {
+  margin-bottom: 2em;
+  padding-left: 0.6em;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 50%;
+  padding: 4em;
 }
 
 .App-logo {
