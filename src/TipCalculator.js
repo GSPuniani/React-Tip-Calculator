@@ -29,6 +29,8 @@ class TipCalculator extends Component {
               Bill ($)
               <input 
                 type="number"
+                step="0.01"
+                min="0"
                 value={this.state.bill}
                 onChange={(e) => this.setState({ bill: e.target.value })}
               />
@@ -38,6 +40,7 @@ class TipCalculator extends Component {
               Tip (%)
               <input 
                 type="number"
+                min="0"
                 value={this.state.tip}
                 onChange={(e) => this.setState({ tip: e.target.value })}
               />
@@ -47,6 +50,7 @@ class TipCalculator extends Component {
               Split (Number of People)
               <input 
                 type="number"
+                min="1"
                 value={this.state.split}
                 onChange={(e) => this.setState({ split: e.target.value })}
               />
